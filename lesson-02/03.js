@@ -14,7 +14,7 @@ if (score <= 49) {
     }
     else {
         if ((score >= 70) && (score <= 79)) {
-            grade = 'С';
+            grade = 'C';
         }
         else {
             if ((score >= 80) && (score <= 89)) {
