@@ -10,10 +10,20 @@
 */
 
 function truncate(str, maxLength) {
+  const ellipsis = '...';
+
+  
   if (str.length <= maxLength) {
     return str;
   }
-  return str.slice(0, maxLength - 3) + '...';
-  }
+
+
+  const visiblePart = str.slice(0, maxLength);
+
+  return visiblePart + ellipsis;
+}
+
+  console.log(truncate("Вот, что мне действительно нравится в этом", 20));
+  console.log(truncate("Короткая строка", 20))
 
 
